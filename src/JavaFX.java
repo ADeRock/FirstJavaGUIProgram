@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
+// import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import java.io.FileInputStream;
 import javafx.scene.control.MenuButton;
@@ -101,7 +101,7 @@ public class JavaFX extends Application {
 
         MenuButton menuButton = new MenuButton("Options", null, menuItem1, menuItem2, menuItem3, menuItem4, menuItem5);
         CheckBox checkBox1 = new CheckBox("Restart Here");
-        checkBox1.setOnAction(e->{
+        checkBox1.setOnAction(e-> {
             imageView.setImage(image);
             checkBox1.setSelected(false);
         });
